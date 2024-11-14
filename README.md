@@ -1,0 +1,2 @@
+# OTUSMlOps
+MlOPs courses
