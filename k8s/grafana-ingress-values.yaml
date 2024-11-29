@@ -1,0 +1,7 @@
+grafana:
+   enabled: true
+   ingress:
+     enabled: true
+     ingressClassname: nginx
+     hosts:
+      - monitoring.test.ai

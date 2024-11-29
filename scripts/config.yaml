@@ -1,0 +1,11 @@
+SOURCE_BUCKET: 'bucket-mlops-project'
+MLFLOW_URL: 'http://192.168.49.2:30499'
+S3_KEY_ID : 'YCLKRcdEYXXGtibDA_bKmuOY'
+S3_SECRET_KEY: 'YC8KTcO5kxCoBY950-36WcWo6uzy8tBJ4S1gfYJmd'
+MODEL_NAME: 'ESPC.model'
+EXPIRIMENT_NAME: 'ESPC_analysis'
+MLFLOW_S3_ENDPOINT_URL: "https://storage.yandexcloud.net"
+FILE_NAME_FOR_REFFIT: "retraining_data.csv"
+FILE_NAME_FOR_TRAIN: "train_data.csv"
+FILE_NAME_FOR_HOLDOUT: "ab_test_data.csv"
+FILE_NAME_FOR_TEST: "test_data.csv"

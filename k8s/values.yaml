@@ -1,0 +1,28 @@
+deployment:
+  replicaCount: 2
+  evisionHistoryLimit: 5
+  maxSurge: 1
+  maxUnavailable: 2
+  image: kirilldubovskikh/ESPC_project:latest
+  port: 80
+  imagePullPolicy: Always
+  readinessProbe:
+    path: healthcheck
+    initialDelaySeconds: 1  
+    periodSeconds: 10
+    failureThreshold: 2
+  livenessProbe:
+    path: healthcheck     
+    initialDelaySeconds: 1
+    failureThreshold: 2
+    periodSeconds: 10
+
+service:
+  port: 80
+  targetPort: 80
+  type: ClusterIP
+  portName: ml-app
+  protocol: TCP
+
+ingress:
+  host: test.ai
